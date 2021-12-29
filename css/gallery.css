@@ -1,0 +1,21 @@
+.images {max-width: 1300px; height: 1200px; overflow: hidden; margin:0 auto; display: flex; flex-wrap: wrap; justify-content: space-between;}
+.image {flex: 25%;}
+.image img {vertical-align: middle; padding: 8px 0;}
+.image li {text-align: center;}
+
+button.g-btn.btn{position: relative; top:20px; left: 0; right: 0; margin: auto;}
+.g-btn {position:relative; width: 200px; height: 55px; display: flex; font-size: 1em; text-align: center; cursor: pointer; justify-content: center;}
+.g-btn::before {background-color: #527673; transition: 0.5s ease-out; position: absolute; content: "";}
+.btn::before {top: 0; bottom: 0; left: 0; height: 100%; width: 0%; position: absolute; content: "";}
+.btn:hover::before {width: 100%; position: absolute; content: "";}
+.btn span {position:relative; transition: 0.2s; width: 200px; height: 55px; display: block; line-height: 50px; border: none;}
+.btn span:hover {transition: 0.2s 0.1s; outline: 0!important; outline-offset: 0; color: #fff;}
+
+
+.video {max-width: 1300px; margin: 0 auto; height: 400px; position: relative; top: 2%; background-color: #527673; margin-top: 50px; display: flex; justify-content: space-evenly; align-items: center;}
+.video iframe {margin: 20px;}
+
+@media screen and (max-width:1300px) {
+    .images {max-width: 680px;}
+    
+}

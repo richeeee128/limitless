@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIMITLESS NEWS</title>
+    <link rel="shortcut icon" href="../images/pavi.ico">
+    <link rel="stylesheet" href="../css/basic.css">
+    <link rel="stylesheet" href="../css/news.css">
+    <link rel="stylesheet" href="../css/owl.carousel.css">
+    <link rel="stylesheet" href="../css/owl.theme.default.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <script src="../js/jquery-2.2.4.min.js"></script>
+    <script src="../js/owl.carousel.js"></script>
+    <script src="../js/owl.autoplay.js"></script>
+    <script src="../js/owl.navigation.js"></script>
+    <script src="https://kit.fontawesome.com/078659f244.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="nav">
+                <ul class="gnb">
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="about.html">about</a></li>
+                    <li><a href="gallery.html">gallery</a></li>
+                    <li><a href="news.html">news</a></li>
+                </ul>
+                <p><img src="../images/DSC02267.jpg" alt="하트주영" id="hjy"></p>
+                
+        </div>
+        <div class="menu">
+            <div class="hamberger-menu"></div>
+        </div>
+    </header>
+    <section>
+        <div id="newsbg">
+            <h1>NEWS</h1>
+            <div id="news">
+                <ul>
+                    <li><a href="http://zine.istyle24.com/Star/StarView.aspx?Idx=55939&Menu=4&_C_=23069">써브웨이, '울트라 치즈'광고 비하인드 영상 공개</a><span>21.11.18</span></li>
+                    <li><a href="http://www.slist.kr/news/articleView.html?idxno=311927">구교환-이주영, '메기'커플 써브웨이 광고 100만뷰 돌파</a><span>21.11.18</span></li>
+                    <li><a href="http://www.newsculture.press/news/articleView.html?idxno=500274">#SaveOurCinema 캠페인 포스터 공개</a><span>21.11.18</span></li>
+                    <li><a href="http://www.mhns.co.kr/news/articleView.html?idxno=514743">서브웨이 모델 구교환X이주영, 영화같은 광고 티저 공개</a><span>21.11.01</span></li>
+                    <li><a href="https://tenasia.hankyung.com/movie/article/2021101510464">송중기-박소담 열고 이준혁-이주영 닫았다... 제26회 부산국제영화제 폐막[종합]</a><span>21.10.15</span></li>
+                    <li><a href="https://tenasia.hankyung.com/topic/article/2021100559294">겨드랑이 아픈 설현에 밤잠 설치는 소진까지... 백신 후유증에 '골머리'</a><span>21.10.05</span></li>
+                    <li><a href="https://www.breaknews.com/837016">배우 이준혁.이주영, 제26회 부산국제영화제 폐막식 사회자로 선정</a><span>21.09.30</span></li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <div id="sns">
+                <h1>SNS</h1>
+                <div class="snswrapper">
+                <div class="owl-carousel">
+                    <div class="item"><span class="heart"></span><a href="https://www.instagram.com/p/CWLFx_pp918/" target="_blank"><img src="../images/inimg1.jpg" alt="insta img"></a></div>
+                    <div class="item"><span class="heart"></span><a href="https://www.instagram.com/p/CWJHvGOBbIq/" target="_blank"><img src="../images/inimg2.jpg" alt="insta img"></a></div>
+                    <div class="item"><span class="heart"></span><a href="https://www.instagram.com/p/CV5ciEKvCS_/" target="_blank"><img src="../images/inimg3.jpg" alt="insta img"></a></div>
+                    <div class="item"><span class="heart"></span><a href="https://www.instagram.com/p/CV5aBgWvcvQ/" target="_blank"><img src="../images/inimg4.jpg" alt="insta img"></a></div>
+                    <div class="item"><span class="heart"></span><a href="https://www.instagram.com/p/CV24TFMPVX9/" target="_blank"><img src="../images/inimg5.jpg" alt="insta img"></a></div>
+                    <div class="item"><span class="heart"></span><a href="https://www.instagram.com/p/CVZrv7RpKIM/" target="_blank"><img src="../images/inimg6.jpg" alt="insta img"></a></div>
+                    <div class="item"><span class="heart"></span><a href="https://www.instagram.com/p/CVZqn93JY-J/" target="_blank"><img src="../images/inimg7.jpg" alt="insta img"></a></div>
+                    <div class="item"><span class="heart"></span><a href="https://www.instagram.com/p/CVPt0mIJ8xw/" target="_blank"><img src="../images/inimg8.jpg" alt="insta img"></a></div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p id="copy">Copyright &copy; LCY. LeeJooYoung Fan. 2021</p>
+        <div class="jysns">
+            <a href="https://www.instagram.com/i_icaruswalks/" title="이주영 인스타그램"><i class="fab fa-instagram"></i></a>
+            <a href="https://post.naver.com/my.naver?memberNo=44834478" title="에이스팩토리 공식 포스트"><i class="fas fa-blog"></i></a>
+        </div>
+    </footer>
+    <script>
+        const menus = document.querySelectorAll(".menu");
+            menus.forEach(function(menu) {
+                const hambergerMenu = menu.querySelector(".hamberger-menu");
+                menu.addEventListener("click", function() {
+                    hambergerMenu.classList.toggle("open");
+                });
+            });
+    
+            $(function(){
+        $('.menu').click(function(){
+            $('.nav').toggle(300)
+        });
+    });
+
+    $(function(){
+            $('.owl-carousel').owlCarousel({
+                items:4, margin:15, loop:true,
+                autoplay:true, autoplayTimeout:3000,
+                
+            });
+        });
+    </script>
+</body>
+</html>
