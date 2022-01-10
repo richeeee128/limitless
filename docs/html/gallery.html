@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIMITLESS GALLERY</title>
+    <link rel="shortcut icon" href="../images/pavi.ico">
+    <link rel="stylesheet" href="../css/basic.css">
+    <link rel="stylesheet" href="../css/gallery.css">
+    <link rel="stylesheet" href="../css/jquery.bxslider.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <script src="../js/jquery-2.2.4.min.js"></script>
+    <script src="https://kit.fontawesome.com/078659f244.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="nav">
+                <ul class="gnb">
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="about.html">about</a></li>
+                    <li><a href="gallery.html">gallery</a></li>
+                    <li><a href="news.html">news</a></li>
+                </ul>
+                <p><img src="../images/DSC02267.jpg" alt="하트주영" id="hjy"></p>
+                
+        </div>
+        <div class="menu">
+            <div class="hamberger-menu"></div>
+        </div>
+    </header>
+    <section>
+        <div class="images">
+            <ul class="image img1">
+                <li><img src="../images/img15.jpg" alt="GQ화보1"></li>
+                <li><img src="../images/img2.jpg" alt="GQ화보2"></li>
+                <li><img src="../images/img3.jpg" alt="DAZE화보1"></li>
+                <li><img src="../images/img4.jpg" alt="singles 화보1"></li>
+                <li><img src="../images/img5.jpg" alt="singles 화보2"></li>
+                <li><img src="../images/img6.jpg" alt="ELLE 화보1"></li>
+                <li><img src="../images/img8.jpg" alt="ELLE 화보2"></li>
+                <li><img src="../images/img17.jpg" alt="매일광고1"></li>
+            </ul>
+            <ul class="image img2">
+                <li><img src="../images/img9.jpg" alt=""></li>
+                <li><img src="../images/img10.jpg" alt="DAZE화보2"></li>
+                <li><img src="../images/img11.jpg" alt="marie Claire 화보1"></li>
+                <li><img src="../images/img12.jpg" alt="DAZE화보3"></li>
+                <li><img src="../images/img13.jpg" alt="teva화보1"></li>
+                <li><img src="../images/img14.jpg" alt="GQ화보3"></li>
+                <li><img src="../images/img18.jpg" alt="marie Claire 화보2"></li>
+                <li><img src="../images/img16.jpg" alt="GQ화보4"></li>
+            </ul>
+            <ul class="image img3">
+                <li><img src="../images/img1.jpg" alt="GQ화보5"></li>
+                <li><img src="../images/img7.jpg" alt="ELLE 화보3"></li>
+                <li><img src="../images/img20.jpg" alt="teva화보2"></li>
+                <li><img src="../images/img21.jpg" alt=""></li>
+                <li><img src="../images/img22.jpg" alt="매일광고2"></li>
+                <li><img src="../images/img23.jpg" alt="DAZE화보4"></li>
+                <li><img src="../images/img24.jpg" alt="매일광고3"></li>
+                <li><img src="../images/img26.jpg" alt="DAZE화보5"></li>
+            </ul>
+            <ul class="image img4">
+                <li><img src="../images/img25.jpg" alt="DAZE화보6"></li>
+                <li><img src="../images/img19.jpg" alt=""></li>
+                <li><img src="../images/img27.jpg" alt="DAZE화보7"></li>
+                <li><img src="../images/img28.jpg" alt="2019 kbs연기대상 비하인드"></li>
+                <li><img src="../images/img32.jpg" alt="타임즈 비하인드"></li>
+                <li><img src="../images/img29.jpg" alt="2019 kbs연기대상 비하인드"></li>
+                <li><img src="../images/img30.jpg" alt="marie Claire 화보3"></li>
+                <li><img src="../images/img31.jpg" alt=""></li>
+            </ul>
+        </div>
+        <button type="button" class="btn g-btn"><span>VIEW MORE ></span></button>
+        <div class="video">
+            <iframe width="350" height="225" src="https://www.youtube.com/embed/lQOm1iqcDGk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="350" height="225" src="https://www.youtube.com/embed/d18h4bM9a2Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="350" height="225" src="https://www.youtube.com/embed/f1cH0U15krc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+    </section>
+    <footer>
+        <p id="copy">Copyright &copy; LCY. LeeJooYoung Fan. 2021</p>
+        <div class="jysns">
+            <a href="https://www.instagram.com/i_icaruswalks/" title="이주영 인스타그램"><i class="fab fa-instagram"></i></a>
+            <a href="https://post.naver.com/my.naver?memberNo=44834478" title="에이스팩토리 공식 포스트"><i class="fas fa-blog"></i></a>
+        </div>
+    </footer>
+    <script>
+        const menus = document.querySelectorAll(".menu");
+            menus.forEach(function(menu) {
+                const hambergerMenu = menu.querySelector(".hamberger-menu");
+                menu.addEventListener("click", function() {
+                    hambergerMenu.classList.toggle("open");
+                });
+            });
+    
+    $(function(){
+        $('.menu').click(function(){
+            $('.nav').toggle(300)
+        });
+    });
+
+    $(document).ready(function(){
+        $(".btn").click(function(){
+            $(".btn").css("display","none");
+            $(".images").css("overflow","auto")
+            $('.images').css("height","3000px")
+            ;
+        });
+    });
+    </script>
+</body>
+</html>
